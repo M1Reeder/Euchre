@@ -1,0 +1,57 @@
+<% layout('layout') -%>
+
+<div class="container">
+	<div class="row">
+		<div class="large-4 large-centered columns">
+			<h2 id="seat-2">Partner</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-4 columns">
+			<h2 id="seat-1">Opponent</h2>
+		</div>
+		<div class="large-4 columns">
+			<div class="board">
+				<h5 id="board"></h5>
+			</div>
+		</div>
+		<div class="large-4 columns">
+			<h2 id="seat-3">Opponent</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-7 large-centered columns">
+			<div id="hand"></div>
+		</div>
+		<div class="large-7 large-centered columns">
+			<div class="row">
+				<div class="large-3 columns">
+					<h2 id="name">
+					<% if(!(typeof username == 'undefined')){  %>
+						<%= username %>
+					<% } %></h2>
+				</div>
+				<div class="large-4 columns">
+					Tricks: <span id="tricks"></span><br>
+					Score:  <span id="score"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div id="trump"></div>
+				<div id="loner"></div>
+			</div>
+			<div id="turn-input"></div>
+		</div>
+		<div class="large-7 large-centered columns">
+			<div id="send">
+				<input type="text" id="data" size="100" />
+				<input type="button" id="sendtext" value="Send Text" class="button small success"/>
+			</div>
+			<div id="output"></div>
+		</div>
+	</div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/game.js"></script>
+

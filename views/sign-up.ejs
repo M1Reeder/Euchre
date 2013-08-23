@@ -1,0 +1,19 @@
+<% layout('layout') -%>
+<div class="row">
+	<div class="large-4 large-centered columns">
+		<form action="/sign-up" method="post">
+			<fieldset>
+				<legend>Sign Up</legend>
+					<label>Username</label>
+					<input class="new-username" type="text" placeholder="Username" name="username">
+					<label>Password</label>
+					<input class="new-password" type="password" placeholder="Password" name="password">
+					<label>Confirm Password</label>
+					<input class="confirm-password" type="password" placeholder="Password">
+					<label>Email</label>
+					<input class="new-email expand" type="email" placeholder="Email" name="email">
+					<input class="small button sign-up-btn expand" type="submit" value="Sign up">
+			</fieldset>
+		</form>
+	</div>
+</div>

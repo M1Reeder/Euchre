@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#loner {
+	background: green;
+	width: 100px;
+	height: 10px;
+}
+
+#output{
+	height: 200px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: #E6DD93;
+}
+
+.container{
+	padding: 10px;
+}

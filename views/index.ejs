@@ -1,0 +1,22 @@
+<% layout('layout') -%>
+
+<% if( !(typeof user == 'undefined') ){ %>
+	<%= 'Welcome: ' + user %>
+<% } %>
+
+<div class="row">
+	<div class="large-4 large-centered small-12 columns">
+		<a href="/euchre"><button class="large btn round success expand">Play Euchre</button></a>
+	</div>	
+</div>
+<div class="row">
+	<div class="large-4 large-centered small-12 columns">
+		<a href="/login"><button class="large btn round expand">Login</button></a>
+	</div>	
+</div>
+<div class="row">
+	<div class="large-4 large-centered small-12 columns">
+		<a href="/sign-up"><button class="large btn round secondary expand">Signup</button></a>
+	</div>	
+</div>
+
